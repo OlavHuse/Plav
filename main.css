@@ -46,7 +46,7 @@ a:hover, a:active {
 .avsnitt {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 3rem;
     border: 1px solid black;
     position: sticky; 
 }
