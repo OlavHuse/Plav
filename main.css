@@ -47,7 +47,14 @@ a:hover, a:active {
     float: left;
     width: 50%;
     padding: 15px;
+    border: 1px solid black;
 }
+.avsnitt2 {
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
 
 
 .row:after {
@@ -65,12 +72,13 @@ a:hover, a:active {
 
 
 .footer {
-    position:absolute ;
+    position:fixed absolute;
     bottom:0px;
-    right:0;
-    left:0;
+    width: 100%;
     background-color: lightgray;
     text-align: center;
     border: 2px solid gray;
-    font-size 15px;
+    font-size 10px;
+    float:left;
+    padding: 2rem;
 }
