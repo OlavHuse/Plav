@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
     box-sizing: border-box;
@@ -66,4 +67,73 @@ a:hover, a:active {
     border: 2px solid gray;
     font-size 10px;
     padding: 2rem;
+=======
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+
+.overskrift {
+    background-color: lightgray;
+    text-align: center;
+    padding: 2rem;
+}
+
+.topnav {
+    background-color: #333;
+}
+.nav {
+    background-color: #333;
+}
+
+a:link, a:visited {
+    color: white; 
+    background-color: #333; 
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 25px;
+    
+}
+
+a:hover, a:active {
+    background-color: gray;
+}
+
+
+.avsnitt {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width:600px) {
+    .avsnitt {
+        width: 100%;
+    }
+}
+
+
+.footer {
+    position:fixed absolute;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    border: 2px solid gray;
+    font-size 10px;
+    padding: 2rem;
+>>>>>>> eab5e2ae4beaceeca50e356abc8407d0cc939b61
 }
