@@ -45,7 +45,8 @@ a:hover, a:active {
 
 }
 .Bilder {
-    float: center;
+    float: left;
+    padding: 20px;
 }
 
 .row:after {
@@ -60,6 +61,11 @@ a:hover, a:active {
         width: 100%;
         
         
+    }
+    .Bilder {
+        width: auto;
+        max-width: 100%;
+        height: auto;
     }
 }
 
