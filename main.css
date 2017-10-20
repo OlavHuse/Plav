@@ -54,6 +54,8 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
+        border-left: 6px solid green;
+        height: 100px;
         
     }
 }
