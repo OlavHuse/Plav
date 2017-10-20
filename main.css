@@ -72,12 +72,6 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
-        padding: 15px;
-        border-bottom: 1px solid black;
-        
-    }
-    .footer {
-        position: absolute fixed;
         
     }
 }
