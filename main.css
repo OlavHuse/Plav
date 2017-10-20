@@ -47,6 +47,7 @@ a:hover, a:active {
 .Bilder {
     float: left;
     padding: 20px;
+    max-width: 600px;
 }
 
 .row:after {
@@ -59,9 +60,7 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
-        
-        
-    }
+        }
     .Bilder {
         width: auto;
         max-width: 100%;
