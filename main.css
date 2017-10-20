@@ -44,11 +44,7 @@ a:hover, a:active {
     padding: 2rem;
 
 }
-.Bilder {
-    float: left;
-    padding: 20px;
-    max-width: 250px;
-}
+
 
 .row:after {
     content: "";
@@ -62,22 +58,7 @@ a:hover, a:active {
         width: 100%;
     }
 }
-@media (max-width: 480px) {
-    .Bilder {
-        background-image: url(Bilder/fjell.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}
-@media (min-width: 481px) {
-    .bilder {
-        background-image: url(Bilder/fjell.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-        
-    }
-}
+
  
 
 .footer {
