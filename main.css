@@ -48,8 +48,7 @@ a:hover, a:active {
     width: 50%;
     padding: 10px;
     position: absolute fixed;
-    border-left: 1px solid black;
-    height: 10cm;
+    
     
 }
 .avsnitt2 {
@@ -72,7 +71,7 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
-        height: 10cm;
+        
         
     }
 }
