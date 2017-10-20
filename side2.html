@@ -17,15 +17,84 @@
             <div class="nav">
                 <a href="index.html">Hovedside</a></div>
             
-                
+            
+            <button onclick="four()">4</button>
+<button onclick="two()">2</button>
+<button onclick="one()">1</button>
             
             
+            <div class="row"> 
+  <div class="column">
+    <img src="Bilder/fjell.png">
+    <img src="Bilder/gammelt.jpg">
+    <img src="BIlder/Nytt.jpg">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </div>
+  <div class="column">
+    <img src="Bilder/fjell.png">
+    <img src="Bilder/gammelt.jpg">
+    <img src="Bilder/Nytt.jpg">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </div> 
+            <div class="column">
+    <img src="Bilder/gammelt.jpg">
+    <img src="Bilder/gammelt.jpg">
+    <img src="BIlder/Nytt.jpg">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </div>
+            <div class="column">
+    <img src="Bilder/fjell.png">
+    <img src="Bilder/gammelt.jpg">
+    <img src="Bilder/Nytt.jpg">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+  </div> 
+  
+            </div>       
             
+           
+
+<script>
+// Four images side by side
+function four() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "25%";
+    }
+}
+
+// Two images side by side
+function two() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "50%";
+    }
+}
+
+// Full-width images
+function one() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "100%";
+    }
+}
+</script>
         
-        <!--
-        
-        <div class="article"> <article> <h1> Avsnitt 2</h1> <br> <p> detter er avsnitt nr 2</p> </article></div>
-        <div class="aside"> <aside> <h1> Avsnitt 3</h1> <br> <p> detter er avsnitt nr 3</p> </aside></div>!-->
+
     
             <div class="footer"> <footer>  Olav Huse. </footer></div>
     
