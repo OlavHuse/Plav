@@ -21,6 +21,8 @@
      <div class="button">      
             <button onclick="one()">1</button>
             <button onclick="two()">2</button>
+            <button type="button" onclick="changeColor()">Night</button>
+         
             </div>
             
             
@@ -49,6 +51,14 @@
            
 
 <script>
+    
+    function changeColor(color)
+    {
+        document.body.style.background = "#333";
+    }
+    
+    
+    
 // Four images side by side
 function four() {
     var elements = document.getElementsByClassName("column");
