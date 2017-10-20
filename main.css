@@ -20,6 +20,7 @@ body {
 }
 .nav {
     background-color: #333;
+    position: absolute fixed;
 }
 
 a:link, a:visited {
@@ -43,6 +44,9 @@ a:hover, a:active {
     padding: 2rem;
 
 }
+.Bilder {
+    float: center;
+}
 
 .row:after {
     content: "";
@@ -54,8 +58,7 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
-        border-left: 6px solid green;
-        height: 100px;
+        
         
     }
 }
