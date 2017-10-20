@@ -46,29 +46,10 @@ a:hover, a:active {
 .avsnitt {
     float: left;
     width: 50%;
-<<<<<<< HEAD
     padding: 10px;
     position: absolute fixed;
-    
-    
-=======
-    padding: 3rem;
-    border: 1px solid black;
-    position: sticky; 
->>>>>>> parent of 122e58c... oj
+
 }
-.avsnitt2 {
-    float: left;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid black;
-}
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 122e58c... oj
-
-
 
 .row:after {
     content: "";
@@ -79,7 +60,7 @@ a:hover, a:active {
 
 @media (max-width:600px) {
     .avsnitt {
-        width: 50%;
+        width: 100%;
         
         
     }
