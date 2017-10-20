@@ -75,6 +75,7 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
+        padding: 15px;
         
     }
 }
