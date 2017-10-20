@@ -79,9 +79,14 @@ a:hover, a:active {
 
 @media (max-width:600px) {
     .avsnitt {
-        width: 100%;
+        width: 50%;
         
         
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
 .logo {
