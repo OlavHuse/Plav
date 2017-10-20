@@ -8,13 +8,6 @@ body {
 }
 
 
-
-.container {
-    
-
-}
-
-
 .overskrift {
     background-color: lightgray;
     text-align: center;
@@ -61,17 +54,7 @@ a:hover, a:active {
 @media (max-width:600px) {
     .avsnitt {
         width: 100%;
-        
-        
     }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-.logo {
-    
 }
 
 
