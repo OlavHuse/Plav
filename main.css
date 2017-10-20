@@ -11,11 +11,7 @@ body {
 p {
     color: black;
 }
-.nightbtn {
-    float: center;
-    display:inline;
-    float:left;
-}
+
 
 .overskrift {
     background-color: lightgray;
@@ -25,10 +21,12 @@ p {
 
 .topnav {
     background-color: #333;
+        
 }
 .nav {
     background-color: #333;
-    position: absolute fixed;
+    
+    
 }
 
 a:link, a:visited {
@@ -43,6 +41,7 @@ a:link, a:visited {
 
 a:hover, a:active {
     background-color: gray;
+    padding: 14px 25px;
 }
 
 
@@ -79,12 +78,11 @@ a:hover, a:active {
     }
 }
 .button {
-    background-color: #333;
-    padding: 1px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    
+    padding: 12px 12px; 
+     background-color: #333;
+    color: white;
+    font-size: 12px;
+    border: 1px solid green;
 }
 
  
