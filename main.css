@@ -66,6 +66,9 @@ a:hover, a:active {
     .avsnitt {
         width: 100%;
     }
+    .column {
+        width: 100%;
+    }
 }
 
  
