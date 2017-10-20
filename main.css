@@ -76,6 +76,10 @@ a:hover, a:active {
         border-bottom: 1px solid black;
         
     }
+    .footer {
+        position: absolute fixed;
+        
+    }
 }
 .logo {
     
@@ -84,13 +88,11 @@ a:hover, a:active {
 
 .footer {
     position:fixed absolute;
-    bottom:0px;
     width: 100%;
     background-color: lightgray;
     text-align: center;
     border: 2px solid gray;
     font-size 10px;
-    float:left;
     padding: 2rem;
 }
 .p {
