@@ -82,7 +82,7 @@ a:hover, a:active {
      background-color: #333;
     color: white;
     font-size: 12px;
-    border: 1px solid green;
+    border: 1px solid lightgray;
 }
 
  
@@ -96,4 +96,7 @@ a:hover, a:active {
     background-color: cadetblue;
     text-align: center;
     margin-bottom: 0;
+}
+.container {
+    background-color: #333;
 }
