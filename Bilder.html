@@ -1,77 +1,117 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <title> Olav</title>
-        <link rel="stylesheet" href="main.css">
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Olav Huse</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="Bilder/PCB-icon.png">
     </head>
-    
-    
     <body>
         
-        <div class="container">
+            
+        <div class="navbar">
+                <li> <a href="index.html">Logg</a> </li>
+                <li> <a class="active1" href="bilder.html">Bilder</a></li>
+                <li> <a href="timer.html">Nedtelling</a></li>
+                 <li> <a href="https://www.fronter.com/mrvgs" target="_blank">Fronter</a></li>
+        </div>
+       <!-- <div class="heading">
+            <header><h1>Bilder</h1></header>
+        </div> -->
+        <br>
+        <br>    
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="Bilder/Feils%C3%B8k.jpg" style="width:100%">
+  <div class="text">Feilsøking av en maskin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Bilder/gammelt1.jpg" style="width:100%">
+  <div class="text">Et defekt hovedkort</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Bilder/Nytt.jpg" style="width:100%">
+  <div class="text">Nytt hovedkort på vei til å bli montert.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Bilder/%C3%98delagt%20bakdeksel.jpg" style="width:100%">
+  <div class="text">Et ødelagt bakdeksel på en T450 lenovo laptop.</div>
+</div>
+            
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="Bilder/nytt%20bakdeksel.jpg" style="width:100%">
+  <div class="text">Ett nytt bakdeksel som skal byttes ut med et som er ødelagt.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="Bilder/LCD%20skjerm.jpg" style="width:100%">
+  <div class="text">En LCD skjerm som skal monteres på ett nytt bakdeksel.</div>
+</div>
+
+
+
+
+            
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+        <br>
+        <br>
+        <br>
+        <div class="footer"> 
+                <footer>Logg &copy; plav.pw</footer>
+        </div>
         
-            <div class="overskrift"><header> <h1>Bilder fra utplassering</h1></header> </div>
-            <div class="nav">
-                <a href="index.html">Hovedside</a></div>
-            
-            
-     <div class="button">      
-        <button onclick="one()" class="button">1</button>
-         <button onclick="two()" class="button">2</button>
-            </div>
-         
-            
-            <div class="row"> 
-  <div class="column">
-    <img src="">
-    <img src="Bilder/gammelt.jpg">
-  </div>
-  <div class="column"> <!--høyre side ved 2 rekker-->
-    <img src="Bilder/Nytt.jpg">
-    <img src="Bilder/Feils%C3%B8k.jpg">
-    
-  </div> 
-  
-            </div>       
-            
-           
+        <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
 
-<script>
-    
-   
-    
-    
-    
-
-
-function two() {
-    var elements = document.getElementsByClassName("column");
-    var i;
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "50%";
-    }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-// Full-width images
-function one() {
-    var elements = document.getElementsByClassName("column");
-    var i;
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "100%";
-    }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
-</script>
-        
 
-    
-            <div class="footer"> <footer>  Olav Huse </footer></div>
-    
-    
-    
-            </div>
-        
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+            
     </body>
 </html>
