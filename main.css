@@ -61,7 +61,7 @@ li.dropdown {
 }
 @media (max-width:1000px) {
     .dropdown-content, .dropdown-content a {
-        left:100px;
+        left:80px;
     }
 }
 .dropdown-content a {
