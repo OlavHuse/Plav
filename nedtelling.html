@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" href="Bilder/PCB-icon.png" />
     </head>
-    <body>
+    <body> 
         
             
         <div class="navbar">
@@ -18,35 +18,31 @@
                
             <div class="refresh">
                 <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Mer</a>
-                <div class="dropdown-content">
-                    <a href="https://www.fronter.com/mrvgs"target="_blank">Fronter</a>
-                    <a href="https://www.skolearena.no/startsiden"target="_blank">Skolearena</a>
-                    </div>
-                </li>
-            </div>
+                    <a href="javascript:void(0)" class="dropbtn">Mer</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.fronter.com/mrvgs"target="_blank">Fronter</a>
+                            <a href="https://www.skolearena.no/startsiden"target="_blank">Skolearena</a>
+                    
+                </div>
+            </li>
         </div>
+    </div>
         
             
         
         <div class="navbar1">
-                <li> <a href="index.html">Hjem</a> </li>
-                <div class="refresh">
+            <li> <a href="index.html">Hjem</a> </li>
                 <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Mer</a>
-                <div class="dropdown-content">
-                    <a href="logg.html">Logg</a>
-                    <a href="bilder.html">Bilder</a>
-                    <a href="nedtelling.html">Nedtelling</a>
-                    <a href="https://www.fronter.com/mrvgs">Fronter</a>
-                    <a href="https://www.skolearena.no/startsiden">Skolearena</a>
-                  
-                  
+                    <a href="javascript:void(0)" class="dropbtn">Mer</a>
+                        <div class="dropdown-content">
+                            <a href="logg.html">Logg</a>
+                            <a href="bilder.html">Bilder</a>
+                            <a href="nedtelling.html">Nedtelling</a>
+                            <a href="https://www.fronter.com/mrvgs">Fronter</a>
+                            <a href="https://www.skolearena.no/startsiden">Skolearena</a>
                     
-                        
-                    </div> 
-                </li>
-            </div>
+                </div> 
+            </li>
         </div>
         
        <!-- <div class="heading">
@@ -64,46 +60,38 @@
     
         
         <script>
-var countDownDate = new Date("Jan 5, 2018 09:00:00").getTime();
+            var countDownDate = new Date("Jan 5, 2018 09:00:00").getTime();
 
 
-var x = setInterval(function() {
-
-
-    var now = new Date().getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                    var distance = countDownDate - now;
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            document.getElementById("demo").innerHTML = days + "D " + hours + "T "
+                            + minutes + "M " + seconds + "S ";
     
-    
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    
-    document.getElementById("demo").innerHTML = days + "D " + hours + "T "
-    + minutes + "M " + seconds + "S ";
-    
-
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "18:)";
-    }
-}, 1000);
+                        if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "18:)";
+                    }
+                }, 1000);
     
             
-    function getWeekNumber(d) {
-    d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
-    var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-    var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-    return [d.getUTCFullYear(), weekNo];
+            function getWeekNumber(d) {
+                d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+                    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
+                        var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+                        var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
+                            return [d.getUTCFullYear(), weekNo];
     
 
-}
+                    }
 
-var result = getWeekNumber(new Date());
-document.getElementById("demo1").innerHTML = ('Uke ' + result[1] + ' av ' + result[0]);
+        var result = getWeekNumber(new Date());
+            document.getElementById("demo1").innerHTML = ('Uke ' + result[1] + ' av ' + result[0]);
 
         </script>
             
