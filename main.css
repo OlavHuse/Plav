@@ -18,14 +18,7 @@ body {
     overflow: hidden;
     background-color: #333;
     display: block;
-}
 
-li {
-<<<<<<< HEAD
-    float: l
-=======
-    float: left;
->>>>>>> 43be3c2feefcf75f7380b812aa24da2b1bda3fa0
 }
 
 li a, .dropbtn {
