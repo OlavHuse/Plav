@@ -17,10 +17,15 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: block;
 }
 
 li {
+<<<<<<< HEAD
     float: l
+=======
+    float: left;
+>>>>>>> 43be3c2feefcf75f7380b812aa24da2b1bda3fa0
 }
 
 li a, .dropbtn {
@@ -192,7 +197,7 @@ body {font-family: Verdana,sans-serif;margin:0}
         width: 100%;
     }
     .medium {
-        display: block;
+        display:flex;
     }
     .large {
         display: none;
@@ -227,5 +232,5 @@ h1 {
     display: none;
 }
 .large {
-    display: block;
+    display:block;
 }
