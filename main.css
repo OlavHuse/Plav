@@ -251,3 +251,7 @@ h5 {
     height: 1000px;
     
 }
+.refresh {
+    float: right;
+    background:url(Bilder/1600.png) no-repeat;
+}
