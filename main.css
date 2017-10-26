@@ -39,8 +39,8 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: lightgray;
-    color: black;
+    background-color: dimgray;
+    color: white;
 }
 li.dropdown {
     display: inline;
@@ -66,9 +66,10 @@ li.dropdown {
     display: block;
 }
     
-.active1  {
+.active1   {
     background-color: dimgray;
     color: white;
+    
 }
 
 * {box-sizing:border-box}
@@ -253,5 +254,5 @@ h5 {
 }
 .refresh {
     float: right;
-    background:url(Bilder/1600.png) no-repeat;
+    background-color: dimgray;
 }
