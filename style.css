@@ -212,9 +212,6 @@ body {font-family: Verdana,sans-serif;margin:0}
     .navbar1 {
         display:  block;
     }
-    .dropdown-content, .dropdown-content a {
-        
-}
 
 }
 @media (max-width: 1000px) {
@@ -223,6 +220,11 @@ body {font-family: Verdana,sans-serif;margin:0}
     }
     
     
+}
+@media (min-width:1920px) {
+    .avsnitt {
+        width: 25%
+    }
 }
 header {
     padding: 0.1rem;
