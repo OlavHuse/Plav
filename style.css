@@ -233,19 +233,24 @@ h1 {
     color: black;
 }
 .timer {
-    font-size: 60px;
-    color: cadetblue;
+    font-size: 40px;
+    color: whitesmoke;
     text-shadow: 5px 5px 5px #333;
-    padding: 2rem;
     text-align: center;
+    background-color: darkslategray;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px #333;
     
     }
 .date {
-    font-size: 30px;
-    color:cadetblue;
+    font-size: 20px;
+    color:whitesmoke;
     text-shadow: 5px 5px 5px #333;
     padding: 1rem;
     text-align: center;
+    background-color: darkslategray;
+    box-shadow: 5px 5px 5px #333;
+    
     
     }
 
