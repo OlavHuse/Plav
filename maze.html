@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<!--<html manifest="snake.appcache">-->
+<html>
+<head>
+
+    <title>JavaScript Snake</title>
+    <link rel=stylesheet id=style type=text/css href=./css/main-snake.css />
+    <link rel="stylesheet" id=style type=text/css href=./css/snakenav.css />
+    
+    <div class="navbar">
+                <li> <a class="active1" href="index.html">Hjem</a> </li>
+                <li> <a href="logg.html">Logg</a></li>
+                <li> <a href="bilder.html">Bilder</a></li>
+                <li> <a href="nedtelling.html">Nedtelling</a></li>
+                <li> <a href="maze.html">Snake</a></li>
+                
+                <div class="refresh">
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Mer</a>
+                <div class="dropdown-content">
+                    <a href="https://www.fronter.com/mrvgs"target="_blank">Fronter</a>
+                    <a href="https://www.skolearena.no/startsiden"target="_blank">Skolearena</a>
+                    </div>
+                </li>
+            </div>
+        </div>
+        
+            
+              
+        <div class="navbar1">
+                <li> <a class="active1" href="index.html">Hjem</a> </li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Mer</a>
+                <div class="dropdown-content">
+                    <a href="logg.html">Logg</a>
+                    <a href="bilder.html">Bilder</a>
+                    <a href="nedtelling.html">Nedtelling</a>
+                    <a href="maze.html">Snake</a>
+                    <a href="https://www.fronter.com/mrvgs">Fronter</a>
+                    <a href="https://www.skolearena.no/startsiden">Skolearena</a>
+                    
+                        
+                </div> 
+            </li>
+        </div>
+    
+    
+    
+    <div id="mode-wrapper">Vanskelighetsgrad:<br /><button id="Easy">Easy</button> <button id="Medium">Medium</button> <button id="Difficult">Hard</button> </div> <br> <br> <br>
+    <button id="high-score">Din highscore</button> 
+<script>
+function getTheme () {
+    function changeTheme (Theme) {
+        document.getElementById('style').setAttribute('href', Theme);
+    }
+    var index = document.getElementById("select").selectedIndex;
+    switch (index) {
+        case 0: 
+          changeTheme('css/dark-snake.css');
+          break;
+          case 1: changeTheme('css/main-snake.css');
+    }
+}
+if (navigator.onLine && window.location.hostname === 'patorjk.com') {
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3312460-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+}
+</script>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="game-area" tabindex="0">
+    </div>
+    <script type="text/javascript" src="./js/snake.js"></script>
+    <script type="text/javascript">
+    var mySnakeBoard = new SNAKE.Board(  {
+                                            boardContainer: "game-area",
+                                            fullScreen: true
+                                        });    
+    </script>
+</body>
+</html>
