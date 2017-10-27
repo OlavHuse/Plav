@@ -54,16 +54,13 @@ li.dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    left: 1206px;
-    border: 1px solid black;
     
     
     
 }
 @media (max-width:1000px) {
     .dropdown-content, .dropdown-content a {
-        left:70px;
-        border: 1px solid #333;
+       
     }
 }
 .dropdown-content a {
@@ -215,13 +212,8 @@ body {font-family: Verdana,sans-serif;margin:0}
         display:  block;
     }
     .dropdown-content, .dropdown-content a {
-        left:70px;
-        border: 1px solid #333;
+        
 }
-@media (max-width:1000px) {
-    .avsnitt {
-        width:100%;
-    }
 }
 header {
     padding: 0.1rem;
@@ -278,6 +270,6 @@ h5 {
     
 }
 .refresh {
-    float: right;
+    float:
     
 }
