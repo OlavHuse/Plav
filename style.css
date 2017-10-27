@@ -214,6 +214,14 @@ body {font-family: Verdana,sans-serif;margin:0}
     .dropdown-content, .dropdown-content a {
         
 }
+
+}
+@media (max-width: 1000px) {
+    .avsnitt {
+        width: 100%;
+    }
+    
+    
 }
 header {
     padding: 0.1rem;
