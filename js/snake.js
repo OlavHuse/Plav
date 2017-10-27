@@ -933,7 +933,7 @@ SNAKE.Board = SNAKE.Board || (function() {
         * @method foodEaten
         */ 
         me.foodEaten = function() {
-            elmLengthPanel.innerHTML = "Length: " + mySnake.snakeLength;
+            elmLengthPanel.innerHTML = "Score: " + mySnake.snakeLength;
             myFood.randomlyPlaceFood();
         };
         
